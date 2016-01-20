@@ -13,7 +13,9 @@ AllCops:
     - Guardfile
     - app/helpers/items_helper.rb
     - local/**/*
-
+    
+Documentation:
+    Enabled: false
 Lint/EndAlignment:
   Enabled: true
 
