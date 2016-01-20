@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class NewsControllerTest < ActionController::TestCase
   setup do
@@ -17,7 +17,7 @@ class NewsControllerTest < ActionController::TestCase
   end
 
   test "should create news" do
-    assert_difference('News.count') do
+    assert_difference("News.count") do
       post :create, news: { content: @news.content, title: @news.title }
     end
 
@@ -40,7 +40,7 @@ class NewsControllerTest < ActionController::TestCase
   end
 
   test "should destroy news" do
-    assert_difference('News.count', -1) do
+    assert_difference("News.count", -1) do
       delete :destroy, id: @news
     end
 

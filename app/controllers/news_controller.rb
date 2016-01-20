@@ -28,7 +28,7 @@ class NewsController < ApplicationController
 
     respond_to do |format|
       if @news.save
-        format.html { redirect_to @news, notice: 'News was successfully created.' }
+        format.html { redirect_to @news, notice: "News was successfully created." }
         format.json { render :show, status: :created, location: @news }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class NewsController < ApplicationController
   def update
     respond_to do |format|
       if @news.update(news_params)
-        format.html { redirect_to @news, notice: 'News was successfully updated.' }
+        format.html { redirect_to @news, notice: "News was successfully updated." }
         format.json { render :show, status: :ok, location: @news }
       else
         format.html { render :edit }
@@ -56,19 +56,20 @@ class NewsController < ApplicationController
   def destroy
     @news.destroy
     respond_to do |format|
-      format.html { redirect_to news_index_url, notice: 'News was successfully destroyed.' }
+      format.html { redirect_to news_index_url, notice: "News was successfully destroyed." }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_news
-      @news = News.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def news_params
-      params.require(:news).permit(:title, :content)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_news
+    @news = News.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def news_params
+    params.require(:news).permit(:title, :content)
+  end
 end
