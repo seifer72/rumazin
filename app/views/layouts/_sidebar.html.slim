@@ -1,0 +1,41 @@
+/! left side column
+.col-md-2
+  #sidebar.panel.panel-default
+    .panel-heading style="background-color:#888;color:#fff;"  Sidebar
+    .panel-body
+      ul.nav.nav-stacked
+        li
+          a href="#"  Link
+        li
+          a href="#"  Link
+        li
+          a href="#"  Link
+        li
+          a href="#"  Link
+        li
+          a href="#"  Link
+        li
+          a href="#"  Link
+      #accordion2.accordion
+        .accordion-group
+          .accordion-heading
+            a.accordion-toggle data-parent="#accordion2" data-toggle="collapse" href="#collapseOne"
+              | Accordion
+          #collapseOne.accordion-body.collapse.in
+            .accordion-inner
+              | Content here for links, ads, etc..
+        .accordion-group
+          .accordion-heading
+            a.accordion-toggle data-parent="#accordion2" data-toggle="collapse" href="#collapseTwo"
+              | Accordion
+          #collapseTwo.accordion-body.collapse
+            .accordion-inner
+              | Another collapse panel. Content here for links, ads, etc..
+      /! /acc
+      hr
+      .col.col-span-12
+        i.fa.fa-facebook.fa-2x
+        | &nbsp;
+        i.fa.fa-twitter.fa-2x
+        | &nbsp;
+        i.fa.fa-vk.fa-2x

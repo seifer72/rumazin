@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: ruvoin_development
+test:
+  <<: *default
+  database: ruvoin_test
+
+production:
+  <<: *default
+  database: ruvoin_production
+  username: ruvoin
+  password: <%= ENV['RUVOIN_DATABASE_PASSWORD'] %>

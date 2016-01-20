@@ -1,0 +1,26 @@
+### Rails template
+*.rbc
+capybara-*.html
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+.idea/*
+/.bundle
+/vendor/bundle
+.rvmrc
+.ruby-gemset
+db/schema.rb
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+.env
+/public/uploads
+.DS_Store
+coverage
+local
