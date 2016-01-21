@@ -21,12 +21,6 @@ Documentation:
 Lint/EndAlignment:
   Enabled: true
 
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-
-Style/StringLiteralsInInterpolation:
-  EnforcedStyle: double_quotes
-
 Metrics/AbcSize:
   Max: 28
 
