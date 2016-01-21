@@ -1,36 +1,37 @@
-/! left side column
 .col-md-2
   #sidebar.panel.panel-default
-    .panel-heading style="background-color:#888;color:#fff;"  Sidebar
+    .panel-heading style="background-color:#888;color:#fff;"  Навигация
     .panel-body
       ul.nav.nav-stacked
         li
-          a href="#"  Link
+          a href="#"  Новости
         li
-          a href="#"  Link
+          a href="#"  Русские святые воины
         li
-          a href="#"  Link
-        li
-          a href="#"  Link
-        li
-          a href="#"  Link
-        li
-          a href="#"  Link
+          a href="#"  Человек и война
       #accordion2.accordion
         .accordion-group
           .accordion-heading
             a.accordion-toggle data-parent="#accordion2" data-toggle="collapse" href="#collapseOne"
-              | Accordion
-          #collapseOne.accordion-body.collapse.in
+              | Солдатский храм
+          #collapseOne.accordion-body.collapse
             .accordion-inner
-              | Content here for links, ads, etc..
-        .accordion-group
-          .accordion-heading
-            a.accordion-toggle data-parent="#accordion2" data-toggle="collapse" href="#collapseTwo"
-              | Accordion
-          #collapseTwo.accordion-body.collapse
-            .accordion-inner
-              | Another collapse panel. Content here for links, ads, etc..
+              ul.nav.nav-pills.nav-stacked.accordion-distinguish
+                li
+                  a href="#" data-parent="#accordion2" Почему мы строим Солдатский храм
+                li
+                  a href="#" Личное отношение
+                li
+                  a href="#" Строительство храма
+                li
+                  a href="#" Образы Солдатского храма
+                li
+                  a href="#" Молитвы русского солдата
+                li
+                  a href="#" Истории Солдатского храма
+                li
+                  a href="#" Друзья Солдатского храма
+
       /! /acc
       hr
       .col.col-span-12

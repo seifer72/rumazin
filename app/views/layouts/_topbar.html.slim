@@ -1,27 +1,16 @@
 nav.navbar.navbar-static
   .container
-    .navbar-header
-      a.navbar-brand href="http://www.bootply.com" target="ext"
-        b Bootply
-      a.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse"
-        span.glyphicon.glyphicon-chevron-down
     .navbar-collapse.collapse
       ul.nav.navbar-nav
         li
-          a href="#"  Link
-        li
-          a href="#"  Link
+          a href="#"  Форум
         li.dropdown
-          a.dropdown-toggle data-toggle="dropdown" href="#"  Channels
+          a.dropdown-toggle data-toggle="dropdown" href="#"  Поисковое движение России
           ul.dropdown-menu
             li
-              a href="#"  Sub-link
+              a href="#"  Новости поискового движения
             li
-              a href="#"  Sub-link
-            li
-              a href="#"  Sub-link
-            li
-              a href="#"  Sub-link
+              a href="#"  Истории поиска
       ul.nav.navbar-right.navbar-nav
         li.dropdown
           a.dropdown-toggle data-toggle="dropdown" href="#"
@@ -37,9 +26,9 @@ nav.navbar.navbar-static
             i.glyphicon.glyphicon-chevron-down
           ul.dropdown-menu
             li
-              a href="#"  Login
+              a href="#"  Войти
             li
-              a href="#"  Profile
+              a href="#"  Профиль
             li.divider
             li
               a href="#"  About
@@ -47,10 +36,5 @@ nav.navbar.navbar-static
 header.masthead
   .container
     .row
-      .col-md-6
-        h1
-          a href="#" title="Scroll down for your viewing pleasure" Bootable Template
-        p.lead 3-column Theme + Layout for Bootstrap 3.
-      .col-md-6
-        .well.pull-right
-          img src="//placehold.it/280x100/E7E7E7" /
+      .well.pull-right style="background-color: rgba(161, 159, 169, 0.65); padding: 0px; border: none;"
+        = image_tag('banner.jpg')
