@@ -6,9 +6,11 @@ default: &default
 development:
   <<: *default
   database: ruvoin_development
+
 test:
   <<: *default
   database: ruvoin_test
+  username: postgres
 
 production:
   <<: *default
