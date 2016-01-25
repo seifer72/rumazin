@@ -1,6 +1,16 @@
 language: ruby
+bundler_args: --without development --path=~/.bundle
 rvm:
   - 2.3.0
+env:
+  - RAILS_ENV=test
+before_install:
+  - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
+  - gem install bundler bundle_cache
+  - bundle_cache_install
+script:
+  - bundle exec rake db:migrate
+  - bundle exec rake db:seed
 services:
   - postgresql
 before_script:
