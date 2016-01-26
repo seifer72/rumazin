@@ -9,6 +9,7 @@ before_install:
 script:
   - bundle exec rake db:migrate
   - bundle exec rake db:seed
+  - bundle exec rspec
 services:
   - postgresql
 before_script:
