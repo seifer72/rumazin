@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'News', type: :request do
-
   describe 'GET /news' do
     before do
       sign_in_as_a_valid_user
