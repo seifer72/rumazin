@@ -32,7 +32,6 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'rubocop', require: false
   gem 'slim_lint', require: false
-  gem 'overcommit', require: false
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'awesome_print'
